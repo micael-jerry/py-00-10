@@ -8,6 +8,7 @@ def print_days(day: int):
         print_days(day - 1)
         print(f"Day {day}")
 
+
 def ft_count_harvest_recursive():
     day: int = int(input("Days until harvest: "))
 
