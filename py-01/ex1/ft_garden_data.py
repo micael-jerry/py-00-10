@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# TODO: must not have a constructor, use a attribut afectation directly to modify value
+
 class Plant:
     def __init__(self, name: str, height: int, age: int):
         self.__name = name
@@ -8,7 +10,6 @@ class Plant:
 
     def __str__(self) -> str:
         return f"{self.__name}: {self.__height}cm, {self.__age} days old"
-
 
 def main() -> None:
     plant_list: list[Plant] = [
